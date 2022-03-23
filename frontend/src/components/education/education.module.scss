@@ -1,0 +1,132 @@
+@use "../../var";
+
+.container {
+  padding: 1rem;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.header {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.eduList {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.eduName {
+  display: flex;
+  justify-content: space-between;
+}
+
+// ----------------EduForm CSS-----------------
+
+.modalContainer {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+.formContainer {
+  margin: 1rem auto;
+  max-width: 550px;
+  flex-direction: column;
+  background-color: var.$white;
+  border-radius: 5px;
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .badgeItem {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 5px;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: var.$green;
+      font-weight: bold;
+
+      .badgeBtnContainer {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        .badgeBtn {
+          font-weight: bold;
+          display: flex;
+          flex-direction: row;
+          font-size: inherit;
+          padding: 5px;
+          border: 2px solid var.$dark-green;
+          border-radius: 5px;
+
+          img {
+            width: 25px;
+          }
+        }
+
+        .badgeBtn:hover {
+          border: 2px solid var.$grey;
+        }
+      }
+    }
+  }
+
+  .form {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .formControl {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    input {
+      font-size: 16px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  }
+
+  .btnContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+    button {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      width: 100px;
+      font-weight: bold;
+    }
+
+    .saveBtn {
+      background-color: var.$green;
+    }
+
+    .saveBtn:hover {
+      background-color: var.$black;
+      color: var.$green;
+    }
+  }
+}

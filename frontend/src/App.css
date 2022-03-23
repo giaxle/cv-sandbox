@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Dosis:wght@200&family=Montserrat+Alternates:wght@500&family=Open+Sans&family=Roboto+Slab:wght@300&family=Russo+One&family=Work+Sans:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  background-color: rgb(49, 49, 49);
+}
+
+body {
+  background-color: rgb(49, 49, 49);
+}

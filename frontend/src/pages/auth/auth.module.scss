@@ -1,0 +1,70 @@
+@use "../../var";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  //   padding: 3rem;
+  margin: 2rem auto;
+  max-width: 550px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.logoContainer {
+  background-color: var.$white;
+  width: 100%;
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  margin: 0 auto;
+  border: 2px solid var.$black;
+  width: 200px;
+  padding: 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  font-family: "Montserrat Alternates";
+}
+
+.auth {
+  background-color: var.$white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.tabs {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+.tab {
+  width: 50%;
+  border: none;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 30px;
+  font-weight: bold;
+  background-color: var.$white;
+}
+
+.activeTab {
+  width: 50%;
+  border: none;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 30px;
+  font-weight: bold;
+  background-color: var.$green;
+  transition: 0.3s;
+}
