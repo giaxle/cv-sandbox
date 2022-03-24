@@ -13,7 +13,6 @@ import Alert from "../../components/alerts/Alert";
 import { GlobalState } from "../../context/GlobalProvider";
 
 import ReactToPrint from "react-to-print";
-import { PDF } from "../../components/PDF-File/PDF";
 
 const Home = () => {
   const {

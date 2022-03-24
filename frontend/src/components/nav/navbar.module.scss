@@ -36,6 +36,13 @@
 
   .listItem {
     cursor: pointer;
+    font-weight: bold;
+    padding: 1rem;
+  }
+
+  .listItem:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
   }
 }
 

@@ -40,7 +40,7 @@ const NavBar = () => {
         </div>
         <nav>
           <ul className={style.list}>
-            <li>
+            <li className={style.listItem}>
               <Link className={style.link} to="/">
                 Home
               </Link>
@@ -50,7 +50,7 @@ const NavBar = () => {
                 Logout
               </li>
             ) : (
-              <li>
+              <li className={style.listItem}>
                 <Link className={style.link} to="/auth">
                   Login
                 </Link>

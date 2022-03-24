@@ -24,6 +24,7 @@
     .submit:hover {
       background-color: var.$black;
       color: var.$green;
+      transition: 0.3s;
     }
     .formControl {
       font-size: 1.1rem;

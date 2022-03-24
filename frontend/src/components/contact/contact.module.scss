@@ -81,5 +81,6 @@
   .saveBtn:hover {
     background-color: var.$black;
     color: var.$green;
+    transition: 0.3s;
   }
 }
