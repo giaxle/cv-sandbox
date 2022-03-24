@@ -13,6 +13,7 @@ import Alert from "../../components/alerts/Alert";
 import { GlobalState } from "../../context/GlobalProvider";
 
 import ReactToPrint from "react-to-print";
+import { PDF } from "../../components/PDF-File/PDF";
 
 const Home = () => {
   const {
@@ -97,7 +98,7 @@ const Home = () => {
         status: true,
         type: "red",
         message:
-          "Your session has expired or and error has occurred. Try to log back in!",
+          "Your session has expired or an error has occurred. Try to log back in!",
       });
       alertTimer();
       localStorage.removeItem("userInfo");
@@ -129,7 +130,7 @@ const Home = () => {
               <button className={style.printSave}>Download</button>
             )}
             content={() => componentRef.current}
-          ></ReactToPrint>
+          />
         </div>
         <hr />
         <div className={style.tabs}>
@@ -179,8 +180,8 @@ const Home = () => {
           <EduForm education={education} setEducation={setEducation} />
         )}
       </div>
-      <div ref={componentRef} className={style.previewBox}>
-        <div className={style.box}>
+      <div className={style.previewBox}>
+        <div ref={componentRef} className={style.box}>
           <Contact contact={contact} />
           <div className={style.grid}>
             <Skills skills={skills} />
